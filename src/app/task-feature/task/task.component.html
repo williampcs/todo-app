@@ -1,9 +1,7 @@
-<h1>將計算結果顯示在頁面上</h1>
-<div>代辦事項總數 : {{totalCount}}</div>
-<div>已完成個數 : {{finishCount}}</div>
-<div>剩下代辦事項個數 : {{totalCount - finishCount}}</div>
-
+<div [style.fontSize.pt]="fontSize">類型:{{type}}</div>
+<div>Task 1 - {{content}}</div>
 <div>代辦事項狀態 : {{state}}</div>
+
 <button type = "button"
         [disabled]="state === 'None'"
         (click)="onSetState('None')">
@@ -21,3 +19,7 @@
         (click)="onSetState('Finish')">
         未安排
 </button>
+
+<div>代辦事項總數 : {{totalCount}}</div>
+<div>已完成個數 : {{finishCount}}</div>
+<div>剩下代辦事項個數 : {{totalCount - finishCount}}</div>

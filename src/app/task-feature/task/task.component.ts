@@ -14,4 +14,7 @@ export class TaskComponent {
   onSetState(state:'None'|'Doing'|'Finish'): void {
     this.state = state;
   }
+
+  type: 'Home'|'Work'|'Other' = 'Work';
+  fontSize = 18;
 }
