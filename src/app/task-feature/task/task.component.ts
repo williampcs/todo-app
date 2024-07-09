@@ -16,5 +16,6 @@ export class TaskComponent {
   }
 
   type: 'Home'|'Work'|'Other' = 'Work';
-  fontSize = 18;
+  fontSize = 26;
+  color = 'Green';
 }
